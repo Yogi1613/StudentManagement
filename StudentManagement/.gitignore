@@ -1,0 +1,72 @@
+# .gitignore for Visual Studio / .NET Core Projects
+
+## 1. Visual Studio and IDE Files
+################################
+# User-specific files that shouldn't be shared
+*.user
+*.suo
+
+# Solution files and project-specific settings
+*.sln.docstates
+*.vsproj.user
+# VS Code files, if you also use VS Code
+.vscode/
+
+## 2. Build Artifacts and Output Directories
+############################################
+# Common intermediate build output directory
+[Oo]bj/
+# Common final build output directory
+[Bb]in/
+
+# NuGet package restore directory
+.vs/
+.nuget/
+**/packages/
+**/PackageSources/
+
+# Temporary files created by the IDE/build
+**/*.bak
+**/*.log
+**/*.cache
+
+## 3. Tooling and Runtime Files
+###############################
+# Tools like Entity Framework Migrations
+# Note: The 'Migrations' folder itself (under StudentManagement) is often **kept** # if it contains code-based migrations. The files *within* the migrations folder 
+# are typically source-controlled.
+# If you only want to ignore the 'bin' and 'obj' inside Migrations:
+**/[Mm]igrations/[Bb]in/
+**/[Mm]igrations/[Oo]bj/
+
+# Test results and temporary files
+TestResults/
+_ReSharper.*/
+*.[Dd]b
+*.[Ll]df
+
+## 4. ASP.NET/Web-Specific Files
+#################################
+# Generated files for debugging and runtime
+[Ww]wwroot/
+!wwwroot/lib/ # EXCEPT for files in wwwroot/lib (for third-party libraries you might manage manually)
+
+# Temporary publish folder
+Publish/
+*.pubxml
+*.pfx
+
+## 5. Configuration & Secrets (Optional, but highly recommended)
+################################################################
+# Local user secrets file (stores sensitive info, should NEVER be committed)
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.json.user
+**/secrets.json
+
+# Launch settings (often contains ports/profiles specific to one machine)
+**/Properties/launchSettings.json
+
+# Visual Studio Cache Directory
+# Contains user-specific, temporary, and file-locking data.
+.vs/
